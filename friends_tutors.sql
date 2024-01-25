@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 18, 2024 at 04:19 AM
+-- Generation Time: Jan 25, 2024 at 06:16 AM
 -- Server version: 10.5.23-MariaDB
 -- PHP Version: 8.2.14
 
@@ -40,6 +40,29 @@ CREATE TABLE `admins` (
 
 INSERT INTO `admins` (`userid`, `username`, `email`, `password`) VALUES
 ('rt_admin1', 'admin1', 'admin1@gmail.com', 'admin123');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `class`
+--
+
+CREATE TABLE `class` (
+  `classid` int(10) NOT NULL,
+  `classname` varchar(50) NOT NULL,
+  `subjects` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subjects`
+--
+
+CREATE TABLE `subjects` (
+  `subjectid` int(10) NOT NULL,
+  `subject` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -85,6 +108,18 @@ INSERT INTO `users` (`userid`, `username`, `email`, `mobileno`, `gender`, `passw
 --
 ALTER TABLE `admins`
   ADD PRIMARY KEY (`username`);
+
+--
+-- Indexes for table `class`
+--
+ALTER TABLE `class`
+  ADD PRIMARY KEY (`classid`);
+
+--
+-- Indexes for table `subjects`
+--
+ALTER TABLE `subjects`
+  ADD PRIMARY KEY (`subjectid`);
 
 --
 -- Indexes for table `users`
