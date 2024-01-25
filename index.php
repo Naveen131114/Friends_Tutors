@@ -27,7 +27,7 @@
         <div class="container">
             <div class="wrapper">
                 <section class="col captions">
-                    <h1>Gateway to Success Through Engaging, Insightful Quizzes! Empower your intellect at <span>Friends Tutor. </span></h1>
+                    <h1>Gateway to Success Through Engaging, Insightful Quizzes! Empower your intellect at <span>Friends Tutors. </span></h1>
                 </section>
                 <section class="col banner">
                     <img src="./src/img/quiz.svg" alt="Home Banner">
